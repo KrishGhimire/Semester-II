@@ -1,0 +1,34 @@
+body{
+    background-color: #ffe4e4;
+}
+div{
+    width: 80%;
+    margin: auto;
+    max-width:500px;
+    min-width:300px;
+    padding: 10px;
+}
+h1{
+    text-align:center;
+    font-size: 30px;
+    color: #17c757;
+}
+label,input,select,textarea{
+    display:block;
+    margin:10px;
+   
+}
+.option1 input{
+    margin:0;
+   margin-left: 2px;
+}
+.area{
+    width: 350px;
+}
+button{
+    width: 350px;
+    height: 30px;
+    margin: auto;
+    background-color:#07C46B;
+    font-weight: 200;
+}

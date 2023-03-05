@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Herald College Kathmandu Survey</h1>
+    <div class="main" style="background-color:white">
+<form>
+    <label>Name</label>
+    <input  name ="text">
+    <label>Email</label>
+    <input name ="text">
+    <label>Age</label>
+    <input name ="text">
+    <label for="opts">Which option best describes you?</label>
+<select id="opts" name="opts">
+  <option>Student</option>
+  <option>Prodigy</option>
+  <option>Part-Timer</option>
+  <option>Good For Nothing</option>
+</select>
+<label>Would you recommend Herald College Kathmandu to a friend?</label>
+<label  class="option1">
+    <input style="display: inline;" type="radio" name="refer" value="refer" > Yes</label>
+    <label  class="option1">
+        <input style="display: inline;" type="radio" name="refer" value="refer" > No</label>
+        <label  class="option1">
+            <input style="display: inline;" type="radio" name="refer" value="refer" >Maybe</label>
+</label>
+<label>Languages and Framework known(check all that apply)</label>
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> C</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> C++</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> C#</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> Java</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> Python</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> JavaScript</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> React</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> Angular</label> 
+<label><input id="no-margin" style="display: inline;" type="checkbox" name="choice"> Spring</label>
+ <label>Any comments or suggestions</label>
+    <textarea></textarea>
+    <button type = "submit" style="margin-top: 10px;">Submit</button>
+</form>
+    </div>
+</body>
+</html>
