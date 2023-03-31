@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Repos</title>
+  </head>
+  <body>
+    <h1>Every GitHub's Repositories on this Planet!</h1>
+    <label for="username-input">Please Enter your GitHub username :- </label>
+    <input type="text" id="username-input" />
+    <button id="search-btn" onclick="search()">Search</button>
+    <ul id="repo-list"></ul>
+    <script>
+      async function search() {
+        const username = document.getElementById("username-input").value;
+        const url = `https://api.github.com/users/${username}/repos`;
+        const response = await fetch(url);
+        if (!response.ok) {
+          console.error(`Failed to retrieve repositories: ${response.statusText}`);
+          return;
+        }
+        const repos = await response.json();
+        const repoList = document.getElementById("repo-list");
+        repoList.innerHTML = "";
+        repos.forEach(repo => {
+          const li = document.createElement("li");
+          li.innerText = repo.name;
+          repoList.appendChild(li);
+        });
+      }
+    </script>
+  </body>
+</html>
+
