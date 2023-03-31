@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
+}
+p{
+    font-weight: bold;
+    color: #fff;
+}
+h1{
+    color: #fff;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 17px;
+}
+header ul li a:hover{
+    background: #fff;
+    color: rgb(33, 39, 45) ;
+}
+
+.details{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.imagez{
+
+    width: 45%;
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.imagez img{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
+    transition: bottom 1s, left 1s;
+}
+.imagez:hover .Black{
+    bottom: 100px;
+}
+.imagez:hover .Krease{
+    left: 60%;
+}
+@media only screen and (max-width:700px){
+    header ul{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    header ul li{
+        display: block;
+        list-style: none;
+        margin-left: 20px;
+    }
+    header ul li a{
+        display: block;
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #fff;
+        border-radius: 17px;
+    }
+    header ul li a:hover{
+        background: #fff;
+        color: rgb(33, 39, 45) ;
+}
+}

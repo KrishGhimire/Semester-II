@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed:wght@300&display=swap');
+*
+
+body {
+    font-family: 'Roboto Slab', Condensed;
+    background-image: url(./pexels-eberhard-grossgasteiger-1743392.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    width: 33.33%;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
